@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightskyblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.outer1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: lightblue;
+    margin-bottom: 2%;
+}
+.outer2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: lightblue;
+    margin-bottom: 2%;
+
+}
+
+.innovation-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: #225A70;
+    padding: 3px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.inner-content{
+    display: flex;
+    flex-direction: row;
+}
+.image-svg{
+    display: inline-block;
+    width: 300px;
+  }
+.image-svg > img{
+    margin: 5%;
+    width: 80%;
+}
+.sub-cont{
+    min-width: 80%;
+}
+.sub-cont > h4{
+    margin-left: 25px;
+}

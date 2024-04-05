@@ -1,0 +1,298 @@
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0%;
+    background-color:#99C2ED;
+}
+
+/* --------------  loader   ------------ */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/*  -------------- nav bar ---------------  */
+
+.navbar a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  z-index: 2;
+}
+.navbar a:hover{
+  color: black;
+}
+
+.navbar div:hover{
+  background-color: lightskyblue;
+  width:fit-content;
+  background-color:none;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home {
+  right: 450px;
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 16px;
+  z-index: 2;
+}
+
+.technology {
+  right: 210px;
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 16px;
+  z-index: 2;
+}
+
+.products{
+  right: 110px;
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 16px;
+  z-index: 2;
+}
+
+.about{
+  right: 10px;  
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 16px;
+  z-index: 2;
+}
+
+.Services {
+  right: 340px;
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position:fixed;
+  top: 76px;
+  right: 100px;
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  align-items: center;
+  justify-content: left;
+  background-color: lightskyblue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:flex;
+  margin:2px ;
+  border-radius: 50px;
+}
+
+.dropdown-content a:hover {
+  background-color:rgb(68, 149, 199)
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline;
+  background: none;
+}
+
+.dropdown:hover .Services {
+  background-color:lightskyblue;
+  color: black;
+}
+
+/* --------------- nav bar ---------------*/
+
+/* -------------- loader     -----------*/
+
+.mySlides > .vid{
+  height: 900px;
+  object-fit:fill;
+}
+
+@media screen and (max-width: 1500px) {
+  .mySlides > .vid{
+    height: 590px;
+    object-fit:fill;
+  }
+  .dropdown-content {
+    display: none;
+    position:fixed;
+    top: 70px;
+  }
+}
+
+.mySlides {
+    display: none;
+    max-width: 100%;
+}
+
+.mySlides video {
+    width: 100%;
+    height: auto;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mygif video {
+    width: 100%;
+    height: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 350px) {
+
+  .mySlides > .vid{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+  }
+  .dot-bg{
+    display: flex;
+  }
+  .dot-cont{
+    flex-grow: 10;
+  }
+  .dot{
+    height: 5px;
+    width: 5px;
+  }
+}
+/* --------- partners ------*/
+.partner > img{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  width: 100%;
+}
+
+/* ---- footer ----*/
+
+.Foot{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(179, 176, 176);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.Foot > p{
+  margin: 2px;
+}
+
+.Copyright{
+  display: flex;
+  padding: 5px;
+  font-size: 8;
+  margin: 0%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+/* ---- footer ----*/

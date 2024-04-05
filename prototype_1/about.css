@@ -1,0 +1,44 @@
+.about-title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .about-title:hover{
+    cursor: alias;
+    font-size: xx-large;
+  }
+  .aboutus_points {
+    margin-left: 200px;
+    font-size: 20px;
+  }
+  .aboutus_points > li:hover {
+    font-size: 25px;
+    cursor :alias ;
+    line-height: 50px;
+  }
+
+  .VMV_img{
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+  }
+
+  .imgs{
+    display: flex;
+    flex-direction: column;
+  }
+
+  img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
