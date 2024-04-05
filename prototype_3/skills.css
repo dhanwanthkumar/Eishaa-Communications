@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .box{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 25%;
+    margin-right: 20%;
+  }
+  
+  .box img {
+    object-fit: contain;
+    width: 80%;
+  }
+
+  .about-wrapper{
+    margin-top: 20px;
+  }
+  

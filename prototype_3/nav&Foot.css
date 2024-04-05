@@ -1,0 +1,289 @@
+
+body {
+    font-family:sans-serif;
+    margin: 0%;
+    background-color:#99C2ED;
+}
+
+/* --------------  loader   ------------ */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/*  -------------- nav bar ---------------  */
+
+.navbar a{
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  z-index: 2;
+}
+.navbar a:hover{
+  color: black;
+}
+
+.navbar div:hover{
+  background-color: lightskyblue;
+  width:fit-content;
+  background-color:none;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.home {
+  right: 330px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.Services {
+  right: 255px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 10px;
+  border: none;
+  z-index: 2;
+}
+
+.technology {
+  right: 163px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.products{
+  right: 90px;
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.about{
+  right: 10px;  
+  display: flex;
+  position: fixed;
+  top: 2%;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position:fixed;
+  top: 55px;
+  right: 34px;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  align-items: center;
+  justify-content: left;
+  background-color: lightskyblue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:flex;
+}
+
+.dropdown-content a:hover {
+  background-color:rgb(44, 141, 202)
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline;
+  background: none;
+}
+
+.dropdown:hover .Services {
+  background-color:lightskyblue;
+  color: black;
+}
+
+/* --------------- nav bar ---------------*/
+
+/* -------------- loader     -----------*/
+
+.mySlides > .vid{
+  height: 800px;
+  object-fit:fill;
+}
+
+@media screen and (max-width: 1800px) {
+  .mySlides > .vid{
+    height: 600px;
+    object-fit:fill;
+  }
+
+  .dropdown-content{
+  display: none;
+  position:fixed;
+  top: 50px;
+  right: 34px;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+}
+
+.mySlides {
+    display: none;
+    max-width: 100%;
+}
+
+.mySlides video {
+    width: 100%;
+    height: auto;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mygif video {
+    width: 100%;
+    height: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 350px) {
+
+  .mySlides > .vid{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+  }
+  .dot-bg{
+    display: flex;
+  }
+  .dot-cont{
+    flex-grow: 10;
+  }
+  .dot{
+    height: 5px;
+    width: 5px;
+  }
+}
+/* --------- partners ------*/
+.partner{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.partner > img{
+  background:white;
+  object-fit: contain;
+  width: 100%;
+}
+/*___ partners ___*/
+
+/* ---- footer ----*/
+
+.Foot{
+  display: flex;
+  justify-content: space-between;
+  background-color:black;
+  color: white;
+  font-size: 11px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.Foot > p{
+  margin: 5px;
+}
+
+/* ---- footer ----*/
+
+
+

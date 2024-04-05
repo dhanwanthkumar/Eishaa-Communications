@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head section -->
+
+<head>
+  <title>EISHAA</title>
+  <link rel="icon" type="image" href="images/favicon without eishaa.jpeg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="nav&Foot.css">
+  <Script>
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader");
+
+      loader.classList.add("loader--hidden");
+
+      loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+      });
+    });
+
+  </Script>
+</head>
+
+<!-- body section -->
+
+<body>
+  <div class="loader"></div>
+    <a href="index.html"><img src="images/LOGO.png" class="logo" style="max-width: 6%; position: fixed;z-index: 2;"></a>
+    <div class="navbar" style="display: flex; background-color: aqua;">
+      <div class="home">
+        <a href="index">Home</a>
+      </div>
+      <div class="dropdown">
+        <a class="Services">Services</a>
+        <div class="dropdown-content">
+          <a href="innovation.html">Innovation & Technology Consulting</a>
+          <a href="R&D.html">Engineering and R&D Services</a>
+          <a href="skill.html">Skill Development</a>
+        </div>
+      </div>
+      <div class="technology">
+        <a href="tech.html">Technology</a>
+      </div>
+      <div class="products">
+        <a href="insights.html">Products</a>
+      </div>
+      <div class="about">
+        <a href="about.html">About Us</a>
+      </div>
+    </div>
+
+  <!-- slideshow container for the vedio elements -->
+
+  <div class="slideshow-container" style="width: 100%; background-color: black;">
+
+    <div class="mySlides fade">
+      <video class="vid" autoplay muted loop>
+        <source src="database/1gandaperunda.mp4" type="video/mp4">
+    </div>
+
+    <div class="mySlides fade">
+      <video class="vid" autoplay muted loop>
+        <source src="database/3defence-10sec.mp4" type="video/mp4">
+    </div>
+
+    <div class="mySlides fade">
+      <video class="vid" autoplay muted loop>
+        <source src="database/4aerospace-10sec.mp4" type="video/mp4">
+    </div>
+
+    <div class="mySlides fade">
+      <video class="vid" autoplay muted loop>
+        <source src="database/6healthcare-10sec.mp4" type="video/mp4">
+    </div>
+
+    <div class="mySlides fade">
+      <video class="vid" autoplay muted loop>
+        <source src="database/8education.mp4" type="video/mp4">
+    </div>
+
+    <!-- dot section to find the current slide -->
+
+    <div class="dot-bg" style="text-align:center;background-color: black;">
+      <div class="dot-cont">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </div>
+
+  <!-- capabilities  -->
+  <div class="mygif" style="background:none ;border:none;">
+    <video autoplay muted loop>
+      <source src="database/CAPABILITIES.mp4" type="video/mp4">
+    </video>
+  </div>
+  <!--===============news and Events=========================-->
+  <div class="partner">
+    <img src="images/partners 1.png" alt="company logo">
+    <img src="images/partners 2.png" alt="company logo">
+  </div>
+
+  <!-- Footer -->
+  <footer class="Foot">
+    <p>Terms And Conditions</p>
+    <p>Privacy policy</p>
+    <p>Copyright ©️ 2021 Eishaa Communications Systems Private Limited. All Rights Reserved.</p>
+    <p>Contact Us : <a href="mailto:info@eishaa.com">info@eishaa.com</a></p>
+  </footer>
+  <!-- Footer -->
+
+</body>
+
+</html>
