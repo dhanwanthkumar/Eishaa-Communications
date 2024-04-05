@@ -10,7 +10,7 @@
 ###### < https://dhanwanthkumar.github.io/eishaa-prototype2/ >
 <p>this is the Second trial which contains only necessary info about things done in eishaa communications pvt.ltd</p>
 
-##### Prototype 3
+##### Prototype 3 - final
 ###### < https://dhanwanthkumar.github.io/eishaa-prototype3/ >
 <p>this prototype is a pre final verion of things being added and removed as per preferences of eishaa communications pvt.ltd</p>
 
